@@ -1,0 +1,360 @@
+Step 1: East
+Step 2: South
+Step 3: Stay | Cleaning dirt level 1
+Step 4: West
+Step 5: West
+Step 6: Stay | Cleaning dirt level 1
+Step 7: East
+Step 8: West
+Step 9: East
+Step 10: North | Charging (490/500) -> (500/500)
+Step 11: East
+Step 12: East
+Step 13: Stay | Cleaning dirt level 4
+Step 14: Stay | Cleaning dirt level 3
+Step 15: Stay | Cleaning dirt level 2
+Step 16: Stay | Cleaning dirt level 1
+Step 17: East
+Step 18: Stay | Cleaning dirt level 1
+Step 19: West
+Step 20: East
+Step 21: West
+Step 22: South
+Step 23: Stay | Cleaning dirt level 1
+Step 24: North
+Step 25: East
+Step 26: South
+Step 27: Stay | Cleaning dirt level 3
+Step 28: Stay | Cleaning dirt level 2
+Step 29: Stay | Cleaning dirt level 1
+Step 30: North
+Step 31: West
+Step 32: West
+Step 33: East
+Step 34: East
+Step 35: West
+Step 36: South
+Step 37: West
+Step 38: West
+Step 39: North | Charging (471/500) -> (497/500)
+Step 40: South
+Step 41: West
+Step 42: East
+Step 43: East
+Step 44: East
+Step 45: East
+Step 46: West
+Step 47: West
+Step 48: North
+Step 49: East
+Step 50: East
+Step 51: West
+Step 52: East
+Step 53: West
+Step 54: West
+Step 55: South
+Step 56: West
+Step 57: East
+Step 58: North
+Step 59: East
+Step 60: East
+Step 61: South
+Step 62: North
+Step 63: South
+Step 64: North
+Step 65: West
+Step 66: South
+Step 67: East
+Step 68: North
+Step 69: South
+Step 70: North
+Step 71: West
+Step 72: South
+Step 73: West
+Step 74: East
+Step 75: East
+Step 76: East
+Step 77: Stay | Cleaning dirt level 2
+Step 78: Stay | Cleaning dirt level 1
+Step 79: South
+Step 80: Stay | Cleaning dirt level 1
+Step 81: East
+Step 82: Stay | Cleaning dirt level 2
+Step 83: Stay | Cleaning dirt level 1
+Step 84: West
+Step 85: East
+Step 86: South
+Step 87: Stay | Cleaning dirt level 1
+Step 88: North
+Step 89: South
+Step 90: North
+Step 91: West
+Step 92: North
+Step 93: West
+Step 94: West
+Step 95: East
+Step 96: North
+Step 97: South
+Step 98: North
+Step 99: South
+Step 100: North
+Step 101: West
+Step 102: South
+Step 103: West
+Step 104: West
+Step 105: East
+Step 106: West
+Step 107: West
+Step 108: East
+Step 109: East
+Step 110: West
+Step 111: West
+Step 112: East
+Step 113: West
+Step 114: East
+Step 115: West
+Step 116: East
+Step 117: East
+Step 118: East
+Step 119: West
+Step 120: West
+Step 121: West
+Step 122: East
+Step 123: East
+Step 124: North
+Step 125: South
+Step 126: East
+Step 127: North
+Step 128: East
+Step 129: South
+Step 130: North
+Step 131: South
+Step 132: West
+Step 133: East
+Step 134: East
+Step 135: West
+Step 136: West
+Step 137: West
+Step 138: East
+Step 139: East
+Step 140: North
+Step 141: South
+Step 142: North
+Step 143: West
+Step 144: East
+Step 145: South
+Step 146: North
+Step 147: West
+Step 148: West
+Step 149: East
+Step 150: East
+Step 151: South
+Step 152: West
+Step 153: East
+Step 154: East
+Step 155: South
+Step 156: North
+Step 157: South
+Step 158: East
+Step 159: South
+Step 160: South
+Step 161: Stay | Cleaning dirt level 5
+Step 162: Stay | Cleaning dirt level 4
+Step 163: Stay | Cleaning dirt level 3
+Step 164: Stay | Cleaning dirt level 2
+Step 165: Stay | Cleaning dirt level 1
+Step 166: North
+Step 167: South
+Step 168: North
+Step 169: North
+Step 170: West
+Step 171: East
+Step 172: West
+Step 173: North
+Step 174: West
+Step 175: North
+Step 176: West
+Step 177: South
+Step 178: West
+Step 179: North
+Step 180: East
+Step 181: West
+Step 182: West | Charging (354/500) -> (380/500)
+Step 183: South
+Step 184: East
+Step 185: West
+Step 186: East
+Step 187: North
+Step 188: West | Charging (374/500) -> (400/500)
+Step 189: South
+Step 190: West
+Step 191: East
+Step 192: North | Charging (396/500) -> (422/500)
+Step 193: East
+Step 194: East
+Step 195: South
+Step 196: East
+Step 197: North
+Step 198: South
+Step 199: West
+Step 200: West
+Step 201: West
+Step 202: West
+Step 203: East
+Step 204: North | Charging (410/500) -> (436/500)
+Step 205: East
+Step 206: South
+Step 207: East
+Step 208: West
+Step 209: East
+Step 210: North
+Step 211: East
+Step 212: West
+Step 213: East
+Step 214: South
+Step 215: North
+Step 216: South
+Step 217: East
+Step 218: South
+Step 219: North
+Step 220: West
+Step 221: North
+Step 222: South
+Step 223: East
+Step 224: South
+Step 225: North
+Step 226: West
+Step 227: North
+Step 228: South
+Step 229: East
+Step 230: South
+Step 231: East
+Step 232: West
+Step 233: East
+Step 234: West
+Step 235: East
+Step 236: South
+Step 237: North
+Step 238: South
+Step 239: North
+Step 240: South
+Step 241: North
+Step 242: South
+Step 243: North
+Step 244: West
+Step 245: North
+Step 246: South
+Step 247: North
+Step 248: South
+Step 249: North
+Step 250: West
+Step 251: East
+Step 252: South
+Step 253: North
+Step 254: South
+Step 255: East
+Step 256: West
+Step 257: East
+Step 258: South
+Step 259: North
+Step 260: West
+Step 261: East
+Step 262: West
+Step 263: East
+Step 264: South
+Step 265: South
+Step 266: North
+Step 267: North
+Step 268: West
+Step 269: East
+Step 270: South
+Step 271: South
+Step 272: West
+Step 273: West
+Step 274: East
+Step 275: West
+Step 276: East
+Step 277: East
+Step 278: West
+Step 279: West
+Step 280: West
+Step 281: Stay | Cleaning dirt level 3
+Step 282: Stay | Cleaning dirt level 2
+Step 283: Stay | Cleaning dirt level 1
+Step 284: North
+Step 285: Stay | Cleaning dirt level 2
+Step 286: Stay | Cleaning dirt level 1
+Step 287: West
+Step 288: South
+Step 289: Stay | Cleaning dirt level 2
+Step 290: Stay | Cleaning dirt level 1
+Step 291: East
+Step 292: North
+Step 293: South
+Step 294: East
+Step 295: West
+Step 296: West
+Step 297: West
+Step 298: East
+Step 299: West
+Step 300: East
+Step 301: West
+Step 302: East
+Step 303: West
+Step 304: East
+Step 305: East
+Step 306: East
+Step 307: East
+Step 308: West
+Step 309: West
+Step 310: West
+Step 311: West
+Step 312: North
+Step 313: Stay | Cleaning dirt level 1
+Step 314: South
+Step 315: North
+Step 316: East
+Step 317: West
+Step 318: East
+Step 319: East
+Step 320: West
+Step 321: West
+Step 322: East
+Step 323: South
+Step 324: West
+Step 325: East
+Step 326: North
+Step 327: South
+Step 328: West
+Step 329: North
+Step 330: East
+Step 331: East
+Step 332: South
+Step 333: West
+Step 334: West
+Step 335: North
+Step 336: South
+Step 337: East
+Step 338: East
+Step 339: North
+Step 340: West
+Step 341: West
+Step 342: South
+Step 343: East
+Step 344: North
+Step 345: South
+Step 346: West
+Step 347: East
+Step 348: North
+Step 349: West
+Step 350: East
+Step 351: East
+Step 352: West
+Step 353: West
+Step 354: East
+Step 355: West
+Step 356: South
+Step 357: North
+Step 358: South
+Step 359: East
+Step 360: East

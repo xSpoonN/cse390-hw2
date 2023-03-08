@@ -1,0 +1,4 @@
+Total steps: 0
+Dirt left: 91
+Dead battery: False
+Mission success: False

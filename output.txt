@@ -1,0 +1,71 @@
+Step 1: East | Battery: 499/500
+Step 2: East | Battery: 498/500
+Step 3: Stay | Cleaning dirt level 4 | Battery: 497/500
+Step 4: Stay | Cleaning dirt level 3 | Battery: 496/500
+Step 5: Stay | Cleaning dirt level 2 | Battery: 495/500
+Step 6: Stay | Cleaning dirt level 1 | Battery: 494/500
+Step 7: East | Battery: 493/500
+Step 8: Stay | Cleaning dirt level 2 | Battery: 492/500
+Step 9: Stay | Cleaning dirt level 1 | Battery: 491/500
+Step 10: East | Battery: 490/500
+Step 11: Stay | Cleaning dirt level 1 | Battery: 489/500
+Step 12: South | Battery: 488/500
+Step 13: Stay | Cleaning dirt level 4 | Battery: 487/500
+Step 14: Stay | Cleaning dirt level 3 | Battery: 486/500
+Step 15: Stay | Cleaning dirt level 2 | Battery: 485/500
+Step 16: Stay | Cleaning dirt level 1 | Battery: 484/500
+Step 17: East | Battery: 483/500
+Step 18: Stay | Cleaning dirt level 3 | Battery: 482/500
+Step 19: Stay | Cleaning dirt level 2 | Battery: 481/500
+Step 20: Stay | Cleaning dirt level 1 | Battery: 480/500
+Step 21: South | Battery: 479/500
+Step 22: North | Battery: 478/500
+Step 23: West | Battery: 477/500
+Step 24: West | Battery: 476/500
+Step 25: Stay | Cleaning dirt level 9 | Battery: 475/500
+Step 26: Stay | Cleaning dirt level 8 | Battery: 474/500
+Step 27: Stay | Cleaning dirt level 7 | Battery: 473/500
+Step 28: Stay | Cleaning dirt level 6 | Battery: 472/500
+Step 29: Stay | Cleaning dirt level 5 | Battery: 471/500
+Step 30: Stay | Cleaning dirt level 4 | Battery: 470/500
+Step 31: Stay | Cleaning dirt level 3 | Battery: 469/500
+Step 32: Stay | Cleaning dirt level 2 | Battery: 468/500
+Step 33: Stay | Cleaning dirt level 1 | Battery: 467/500
+Step 34: South | Battery: 466/500
+Step 35: South | Battery: 465/500
+Step 36: Stay | Cleaning dirt level 3 | Battery: 464/500
+Step 37: Stay | Cleaning dirt level 2 | Battery: 463/500
+Step 38: Stay | Cleaning dirt level 1 | Battery: 462/500
+Step 39: West | Battery: 461/500
+Step 40: Stay | Cleaning dirt level 2 | Battery: 460/500
+Step 41: Stay | Cleaning dirt level 1 | Battery: 459/500
+Step 42: West | Battery: 458/500
+Step 43: Stay | Cleaning dirt level 1 | Battery: 457/500
+Step 44: South | Battery: 456/500
+Step 45: Stay | Cleaning dirt level 2 | Battery: 455/500
+Step 46: Stay | Cleaning dirt level 1 | Battery: 454/500
+Step 47: North | Battery: 453/500
+Step 48: West | Battery: 452/500
+Step 49: North | Battery: 451/500
+Step 50: Stay | Cleaning dirt level 1 | Battery: 450/500
+Step 51: North | Battery: 449/500
+Step 52: Stay | Cleaning dirt level 3 | Battery: 448/500
+Step 53: Stay | Cleaning dirt level 2 | Battery: 447/500
+Step 54: Stay | Cleaning dirt level 1 | Battery: 446/500
+Step 55: East | Battery: 445/500
+Step 56: West | Battery: 444/500
+Step 57: South | Battery: 443/500
+Step 58: South | Battery: 442/500
+Step 59: East | Battery: 441/500
+Step 60: East | Battery: 440/500
+Step 61: East | Battery: 439/500
+Step 62: North | Battery: 438/500
+Step 63: North | Battery: 437/500
+Step 64: East | Battery: 436/500
+Step 65: North | Battery: 435/500
+Step 66: West | Battery: 434/500
+Step 67: West | Battery: 433/500
+Step 68: West | Battery: 432/500
+Step 69: West | Charging (431/500) -> (456/500) | Battery: 456/500
+Step 70: Stay | Charging (456/500) -> (481/500) | Battery: 481/500
+Step 71: Stay | Charging (481/500) -> (500/500) | Battery: 500/500
