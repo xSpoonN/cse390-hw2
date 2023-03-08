@@ -119,7 +119,7 @@ class Node {
 public:
 	Position coords;
 	vector<std::shared_ptr<Node>> neighbours;
-	std::shared_ptr<Node> parent; /* This is necessary for backtracking */
+	std::shared_ptr<Node> parent; /* This pointer is necessary for backtracking */
 	Node(const Position coords, std::shared_ptr<Node> parent = nullptr) : coords(coords), parent(parent) {}
 
 	bool operator==(const Node& r) const { return coords.x == r.coords.x && coords.y == r.coords.y; }
@@ -139,6 +139,16 @@ public:
 	}
 };
 
+template <typename T>
+void printVec(const vector<T>& v, const std::string& label = "") noexcept {
+	cout << label << "[ ";
+	for (int i = 0; i < v.size(); i++) {
+		cout << v[i];
+		if (i != v.size() - 1) cout << ", ";
+	}
+	cout << " ]" << endl;
+}
+
 Direction Controller::dfs() {
 	static Node start(Position{ 0, 0 });
 	static vector<Direction> path; /* A path back to the charger */
@@ -146,11 +156,7 @@ Direction Controller::dfs() {
 	static unordered_set<Position, PositionHasher> visited{ Position{0,0} }; /* Vector of nodes the robot has visited */
 	static std::shared_ptr<Node> c = std::make_shared<Node>(start); /* Current node */
 
-	cout << "============================================\nPath Stack: [ ";
-	for (int i = 0; i < path.size(); i++) {
-		cout << path[i] << " ";
-	}
-	cout << "]" << endl;
+	cout << "============================================\n"; printVec(path, "Path Stack: ");
 
 	/* Algorithm overrides go here, such as when the robot runs out of battery or if there's dirt */
 	if (rob->get_dirt_underneath() > 0) return Direction::STAY; /* If there's dirt stay still */
@@ -178,28 +184,20 @@ Direction Controller::dfs() {
 		mapped.insert(c->wCoords());
 	}
 
-	cout << "Choice: [ ";
-	for (int i = 0; i < choice.size(); i++) {
-		cout << choice[i] << " ";
-	}
-	cout << "]" << endl;
+	printVec(choice, "Choice: ");
 
-	if (choice.size() == 0) {
-		ovrde: 
-		if (path.empty()) return Direction::STAY; /* Either we're in an enclosed area, in which we just STAY cause mikeyDoofus */
-		Direction dir = path.back(); /* or we've fully explored the branch, so start consuming the path stack. */
-		path.pop_back();
+	/* pchoose gets a priority among the choice for whichever node is not already visited. */
+	const auto pchoose = std::find_if(choice.begin(), choice.end(), [](Direction d) { return visited.find(c->getCoords(d)) == visited.end(); });
+	if (choice.size() == 0 || pchoose == choice.end()) { /* No choice, or if all nodes are visited */
+		if (path.empty()) return Direction::STAY; /* Either we're in an enclosed area or we are done. */
+		Direction dir = path.back(); path.pop_back(); /* or we've fully explored the branch, so start consuming the path stack. */
 		c = c->parent;
 		return dir;
-	} else {
-		/* pchoose gets a priority among the choice for whichever node is not already visited. */
-		const auto pchoose = std::find_if(choice.begin(), choice.end(), [](Direction d) {return visited.find(c->getCoords(d)) == visited.end(); });
-		if (pchoose == choice.end()) goto ovrde; /* If all nodes are visited, go to override. */
-		const auto ind = pchoose - choice.begin();
-		cout << "Chosen index: " << ind << "(" << choice[ind] << ")" << endl;
-		visited.insert(c->getCoords(choice[ind])); /* Mark the node as visited */
-		c = c->neighbours[ind]; /* Sets the current node to the node we're visiting */
-		path.push_back(opposite(choice[ind])); /* Return path */
-		return choice[ind];
 	}
+	const auto ind = pchoose - choice.begin();
+	cout << "Chosen index: " << ind << "(" << choice[ind] << ")" << endl;
+	visited.insert(c->getCoords(choice[ind])); /* Mark the node as visited */
+	c = c->neighbours[ind]; /* Sets the current node to the node we're visiting */
+	path.push_back(opposite(choice[ind])); /* Return path */
+	return choice[ind];
 }
