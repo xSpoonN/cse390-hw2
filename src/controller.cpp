@@ -158,9 +158,15 @@ Direction Controller::dfs() {
 
 	cout << "============================================\n"; printVec(path, "Path Stack: ");
 
-	/* Algorithm overrides go here, such as when the robot runs out of battery or if there's dirt */
+	/* Need to implement return to charger algo 
+	 * Should be similar to the naive algo, but we need to make a copy of the current path.
+	 * This is so that we can restore the robot to the place we were at before we started returning.
+	 * To restore, basically just flip the path vector's directions, probably with a .map or something
+	 * static vector<Direction> returnPath; <- maybe use something like this to store the duplicate path. 
+	 * You wrote the naive algorithm return thing, so uhhhh yeah. yoroshiku */
+
 	if (rob->get_dirt_underneath() > 0) return Direction::STAY; /* If there's dirt stay still */
-	/* Need to implement return to charger algo */
+	
 
 	vector<Direction> choice; /* Populate the choice vector */
 	if (!rob->is_wall(Direction::NORTH)) {
@@ -199,5 +205,8 @@ Direction Controller::dfs() {
 	visited.insert(c->getCoords(choice[ind])); /* Mark the node as visited */
 	c = c->neighbours[ind]; /* Sets the current node to the node we're visiting */
 	path.push_back(opposite(choice[ind])); /* Return path */
+
+
+
 	return choice[ind];
 }

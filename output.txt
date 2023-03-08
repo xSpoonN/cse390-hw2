@@ -69,3 +69,13 @@ Step 68: West | Battery: 432/500
 Step 69: West | Charging (431/500) -> (456/500) | Battery: 456/500
 Step 70: Stay | Charging (456/500) -> (481/500) | Battery: 481/500
 Step 71: Stay | Charging (481/500) -> (500/500) | Battery: 500/500
+Step 72: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 73: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 74: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 75: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 76: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 77: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 78: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 79: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 80: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 81: Stay | Charging (500/500) -> (500/500) | Battery: 500/500

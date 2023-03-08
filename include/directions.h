@@ -15,10 +15,8 @@ inline std::string dirstr(Direction dir) {
 	}
 }
 
-/* Print out the enum as its name*/
 inline std::ostream& operator<<(std::ostream& os, Direction dir) {
-	os << dirstr(dir);
-	return os;
+	os << dirstr(dir); return os;
 }
 
 inline Direction opposite(Direction dir) {
