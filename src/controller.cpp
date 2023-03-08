@@ -118,9 +118,9 @@ public:                /* And it needs to know how to store struct Position. */
 class Node {
 public:
 	Position coords;
-	vector<Node*> neighbours;
-	Node* parent; /* This is necessary for backtracking */
-	Node(const Position coords, Node* parent = nullptr) : coords(coords), parent(parent) {}
+	vector<std::shared_ptr<Node>> neighbours;
+	std::shared_ptr<Node> parent; /* This is necessary for backtracking */
+	Node(const Position coords, std::shared_ptr<Node> parent = nullptr) : coords(coords), parent(parent) {}
 
 	bool operator==(const Node& r) const { return coords.x == r.coords.x && coords.y == r.coords.y; }
 
@@ -144,7 +144,7 @@ Direction Controller::dfs() {
 	static vector<Direction> path; /* A path back to the charger */
 	static unordered_set<Position, PositionHasher> mapped{ Position{0,0} }; /* Vector of nodes the robot knows about */
 	static unordered_set<Position, PositionHasher> visited{ Position{0,0} }; /* Vector of nodes the robot has visited */
-	static Node* c = &start; /* Current node */
+	static std::shared_ptr<Node> c = std::make_shared<Node>(start); /* Current node */
 
 	cout << "============================================\nPath Stack: [ ";
 	for (int i = 0; i < path.size(); i++) {
@@ -158,22 +158,22 @@ Direction Controller::dfs() {
 
 	vector<Direction> choice; /* Populate the choice vector */
 	if (!rob->is_wall(Direction::NORTH)) {
-		c->neighbours.push_back(new Node(c->nCoords(), c)); /* Reminder to change all these "new" declarations to smart pointers */
+		c->neighbours.push_back(std::make_shared<Node>(c->nCoords(), c));
 		choice.push_back(Direction::NORTH);
 		mapped.insert(c->nCoords());
 	}
 	if (!rob->is_wall(Direction::EAST)) {
-		c->neighbours.push_back(new Node(c->eCoords(), c)); /* Reminder to change all these "new" declarations to smart pointers */
+		c->neighbours.push_back(std::make_shared<Node>(c->eCoords(), c));
 		choice.push_back(Direction::EAST);
 		mapped.insert(c->eCoords());
 	}
 	if (!rob->is_wall(Direction::SOUTH)) {
-		c->neighbours.push_back(new Node(c->sCoords(), c)); /* Reminder to change all these "new" declarations to smart pointers */
+		c->neighbours.push_back(std::make_shared<Node>(c->sCoords(), c));
 		choice.push_back(Direction::SOUTH);
 		mapped.insert(c->sCoords());
 	}
 	if (!rob->is_wall(Direction::WEST)) {
-		c->neighbours.push_back(new Node(c->wCoords(), c)); /* Reminder to change all these "new" declarations to smart pointers */
+		c->neighbours.push_back(std::make_shared<Node>(c->wCoords(), c));
 		choice.push_back(Direction::WEST);
 		mapped.insert(c->wCoords());
 	}
