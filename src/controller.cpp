@@ -150,6 +150,7 @@ void printVec(const vector<T>& v, const std::string& label = "") noexcept {
 }
 
 Direction Controller::dfs() {
+	/* Could maybe move these static vars into the Controller constructor, but tbf if we're separating naive and dfs, it's probably more organized to do it like this.*/
 	static Node start(Position{ 0, 0 });
 	static vector<Direction> path; /* A path back to the charger */
 	static unordered_set<Position, PositionHasher> mapped{ Position{0,0} }; /* Vector of nodes the robot knows about */
@@ -164,9 +165,50 @@ Direction Controller::dfs() {
 	 * To restore, basically just flip the path vector's directions, probably with a .map or something
 	 * static vector<Direction> returnPath; <- maybe use something like this to store the duplicate path. 
 	 * You wrote the naive algorithm return thing, so uhhhh yeah. yoroshiku */
+#if 0
+	if (pathing_to_charger || rob->remaining_battery() - 2 < static_cast<int>(path.size())) {
+		pathing_to_charger = true;
+		/* Check if we have arrived at the charger */
+
+		/* NOTE: I'm pretty sure with the way our path stack works now, it will never reach the charger early. 
+		 * So we could probably delete this check. Idk test later.                   */
+		if (charger_dist.first == 0 && charger_dist.second == 0) {                 /**/
+			path_to_charger.clear();  /* Clear list in case we arrived "early" */  /**/
+			charging = true;		  /* Set charging to true */                   /**/
+			pathing_to_charger = false;                                            /**/
+			goto br;                                                               /**/
+		}																		   /**/
+		/*****************************************************************************/
+
+		/* If we have not yet arrived, backtrack to charger */
+		Direction popped = path.back();
+		path.pop_back();
+
+		/* And because we'll never arrive earlier, this whole keeping track of the charger dist can also be removed. 
+		 * Also worth noting we are now using the coordinate system with Nodes and Position structs, meaning: 
+		 * We can just find the current position by querying the Position coords of the node we're on. 
+		 * And the charger is simply Position (0,0) if we need it somewhere else.   */
+		switch (popped) {                                                         /**/
+		case Direction::EAST: ++charger_dist.first; break;					      /**/
+		case Direction::WEST: --charger_dist.first; break;					      /**/
+		case Direction::SOUTH: ++charger_dist.second; break;					  /**/
+		case Direction::NORTH: --charger_dist.second; break;					  /**/
+		}																		  /**/
+		/****************************************************************************/
+
+		return popped;
+	}
+	/* Charge until we hit our starting battery */
+	if (charging) {
+	br:
+		if (rob->remaining_battery() < starting_battery || rob->remaining_battery() < 2)
+			return Direction::STAY;
+		charging = false;
+	}
+#endif
+
 
 	if (rob->get_dirt_underneath() > 0) return Direction::STAY; /* If there's dirt stay still */
-	
 
 	vector<Direction> choice; /* Populate the choice vector */
 	if (!rob->is_wall(Direction::NORTH)) {
@@ -205,8 +247,6 @@ Direction Controller::dfs() {
 	visited.insert(c->getCoords(choice[ind])); /* Mark the node as visited */
 	c = c->neighbours[ind]; /* Sets the current node to the node we're visiting */
 	path.push_back(opposite(choice[ind])); /* Return path */
-
-
 
 	return choice[ind];
 }
