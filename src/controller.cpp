@@ -15,7 +15,6 @@ using std::pair;
 using std::unordered_set;
 using std::unordered_map;
 using std::cout;
-using std::endl;
 
 Controller::Controller(const Robot* rob) : rob(rob), charger_dist(pair<int, int>(0, 0)), path_to_charger({})
 	, starting_battery(rob->remaining_battery()), charging(false), pathing_to_charger(false) {}
@@ -57,11 +56,8 @@ public:
 template <typename T>
 void printVec(const vector<T>& v, const std::string& label = "") noexcept {
 	cout << label << "[ ";
-	for (int i = 0; i < v.size(); i++) {
-		cout << v[i];
-		if (i != v.size() - 1) cout << ", ";
-	}
-	cout << " ]" << endl;
+	for (const auto& elem : v) { cout << elem; if (&elem != &v.back()) cout << ", "; }
+	cout << " ]" << '\n';
 }
 
 Position getPos(const Position cur, const Direction dir) {
