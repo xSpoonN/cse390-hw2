@@ -1,81 +1,417 @@
-Step 1: East | Battery: 499/500
-Step 2: East | Battery: 498/500
-Step 3: Stay | Cleaning dirt level 4 | Battery: 497/500
-Step 4: Stay | Cleaning dirt level 3 | Battery: 496/500
-Step 5: Stay | Cleaning dirt level 2 | Battery: 495/500
-Step 6: Stay | Cleaning dirt level 1 | Battery: 494/500
-Step 7: East | Battery: 493/500
-Step 8: Stay | Cleaning dirt level 2 | Battery: 492/500
-Step 9: Stay | Cleaning dirt level 1 | Battery: 491/500
-Step 10: East | Battery: 490/500
-Step 11: Stay | Cleaning dirt level 1 | Battery: 489/500
-Step 12: South | Battery: 488/500
-Step 13: Stay | Cleaning dirt level 4 | Battery: 487/500
-Step 14: Stay | Cleaning dirt level 3 | Battery: 486/500
-Step 15: Stay | Cleaning dirt level 2 | Battery: 485/500
-Step 16: Stay | Cleaning dirt level 1 | Battery: 484/500
-Step 17: East | Battery: 483/500
-Step 18: Stay | Cleaning dirt level 3 | Battery: 482/500
-Step 19: Stay | Cleaning dirt level 2 | Battery: 481/500
-Step 20: Stay | Cleaning dirt level 1 | Battery: 480/500
-Step 21: South | Battery: 479/500
-Step 22: North | Battery: 478/500
-Step 23: West | Battery: 477/500
-Step 24: West | Battery: 476/500
-Step 25: Stay | Cleaning dirt level 9 | Battery: 475/500
-Step 26: Stay | Cleaning dirt level 8 | Battery: 474/500
-Step 27: Stay | Cleaning dirt level 7 | Battery: 473/500
-Step 28: Stay | Cleaning dirt level 6 | Battery: 472/500
-Step 29: Stay | Cleaning dirt level 5 | Battery: 471/500
-Step 30: Stay | Cleaning dirt level 4 | Battery: 470/500
-Step 31: Stay | Cleaning dirt level 3 | Battery: 469/500
-Step 32: Stay | Cleaning dirt level 2 | Battery: 468/500
-Step 33: Stay | Cleaning dirt level 1 | Battery: 467/500
-Step 34: South | Battery: 466/500
-Step 35: South | Battery: 465/500
-Step 36: Stay | Cleaning dirt level 3 | Battery: 464/500
-Step 37: Stay | Cleaning dirt level 2 | Battery: 463/500
-Step 38: Stay | Cleaning dirt level 1 | Battery: 462/500
-Step 39: West | Battery: 461/500
-Step 40: Stay | Cleaning dirt level 2 | Battery: 460/500
-Step 41: Stay | Cleaning dirt level 1 | Battery: 459/500
-Step 42: West | Battery: 458/500
-Step 43: Stay | Cleaning dirt level 1 | Battery: 457/500
-Step 44: South | Battery: 456/500
-Step 45: Stay | Cleaning dirt level 2 | Battery: 455/500
-Step 46: Stay | Cleaning dirt level 1 | Battery: 454/500
-Step 47: North | Battery: 453/500
-Step 48: West | Battery: 452/500
-Step 49: North | Battery: 451/500
-Step 50: Stay | Cleaning dirt level 1 | Battery: 450/500
-Step 51: North | Battery: 449/500
-Step 52: Stay | Cleaning dirt level 3 | Battery: 448/500
-Step 53: Stay | Cleaning dirt level 2 | Battery: 447/500
-Step 54: Stay | Cleaning dirt level 1 | Battery: 446/500
-Step 55: East | Battery: 445/500
-Step 56: West | Battery: 444/500
-Step 57: South | Battery: 443/500
-Step 58: South | Battery: 442/500
-Step 59: East | Battery: 441/500
-Step 60: East | Battery: 440/500
-Step 61: East | Battery: 439/500
-Step 62: North | Battery: 438/500
-Step 63: North | Battery: 437/500
-Step 64: East | Battery: 436/500
-Step 65: North | Battery: 435/500
-Step 66: West | Battery: 434/500
-Step 67: West | Battery: 433/500
-Step 68: West | Battery: 432/500
-Step 69: West | Charging (431/500) -> (456/500) | Battery: 456/500
-Step 70: Stay | Charging (456/500) -> (481/500) | Battery: 481/500
-Step 71: Stay | Charging (481/500) -> (500/500) | Battery: 500/500
-Step 72: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 73: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 74: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 75: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 76: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 77: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 78: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 79: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 80: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
-Step 81: Stay | Charging (500/500) -> (500/500) | Battery: 500/500
+Step 1: East | Battery: 29/30
+Step 2: East | Battery: 28/30
+Step 3: Stay | Cleaning dirt level 4 | Battery: 27/30
+Step 4: Stay | Cleaning dirt level 3 | Battery: 26/30
+Step 5: Stay | Cleaning dirt level 2 | Battery: 25/30
+Step 6: Stay | Cleaning dirt level 1 | Battery: 24/30
+Step 7: East | Battery: 23/30
+Step 8: Stay | Cleaning dirt level 1 | Battery: 22/30
+Step 9: East | Battery: 21/30
+Step 10: Stay | Cleaning dirt level 2 | Battery: 20/30
+Step 11: Stay | Cleaning dirt level 1 | Battery: 19/30
+Step 12: East | Battery: 18/30
+Step 13: Stay | Cleaning dirt level 4 | Battery: 17/30
+Step 14: Stay | Cleaning dirt level 3 | Battery: 16/30
+Step 15: Stay | Cleaning dirt level 2 | Battery: 15/30
+Step 16: Stay | Cleaning dirt level 1 | Battery: 14/30
+Step 17: East | Battery: 13/30
+Step 18: Stay | Cleaning dirt level 3 | Battery: 12/30
+Step 19: Stay | Cleaning dirt level 2 | Battery: 11/30
+Step 20: Stay | Cleaning dirt level 1 | Battery: 10/30
+Step 21: East | Battery: 9/30
+Step 22: Stay | Cleaning dirt level 2 | Battery: 8/30
+Step 23: West | Battery: 7/30
+Step 24: West | Battery: 6/30
+Step 25: West | Battery: 5/30
+Step 26: West | Battery: 4/30
+Step 27: West | Battery: 3/30
+Step 28: West | Battery: 2/30
+Step 29: West | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Step 30: Stay | Charging (2.5/30) -> (4/30) | Battery: 4/30
+Step 31: Stay | Charging (4/30) -> (5.5/30) | Battery: 5.5/30
+Step 32: Stay | Charging (5.5/30) -> (7/30) | Battery: 7/30
+Step 33: Stay | Charging (7/30) -> (8.5/30) | Battery: 8.5/30
+Step 34: Stay | Charging (8.5/30) -> (10/30) | Battery: 10/30
+Step 35: Stay | Charging (10/30) -> (11.5/30) | Battery: 11.5/30
+Step 36: Stay | Charging (11.5/30) -> (13/30) | Battery: 13/30
+Step 37: Stay | Charging (13/30) -> (14.5/30) | Battery: 14.5/30
+Step 38: Stay | Charging (14.5/30) -> (16/30) | Battery: 16/30
+Step 39: Stay | Charging (16/30) -> (17.5/30) | Battery: 17.5/30
+Step 40: Stay | Charging (17.5/30) -> (19/30) | Battery: 19/30
+Step 41: Stay | Charging (19/30) -> (20.5/30) | Battery: 20.5/30
+Step 42: Stay | Charging (20.5/30) -> (22/30) | Battery: 22/30
+Step 43: Stay | Charging (22/30) -> (23.5/30) | Battery: 23.5/30
+Step 44: Stay | Charging (23.5/30) -> (25/30) | Battery: 25/30
+Step 45: Stay | Charging (25/30) -> (26.5/30) | Battery: 26.5/30
+Step 46: Stay | Charging (26.5/30) -> (28/30) | Battery: 28/30
+Step 47: Stay | Charging (28/30) -> (29.5/30) | Battery: 29.5/30
+Step 48: Stay | Charging (29.5/30) -> (30/30) | Battery: 30/30
+Step 49: East | Battery: 29/30
+Step 50: East | Battery: 28/30
+Step 51: East | Battery: 27/30
+Step 52: East | Battery: 26/30
+Step 53: East | Battery: 25/30
+Step 54: East | Battery: 24/30
+Step 55: East | Battery: 23/30
+Step 56: Stay | Cleaning dirt level 1 | Battery: 22/30
+Step 57: South | Battery: 21/30
+Step 58: Stay | Cleaning dirt level 7 | Battery: 20/30
+Step 59: Stay | Cleaning dirt level 6 | Battery: 19/30
+Step 60: Stay | Cleaning dirt level 5 | Battery: 18/30
+Step 61: Stay | Cleaning dirt level 4 | Battery: 17/30
+Step 62: Stay | Cleaning dirt level 3 | Battery: 16/30
+Step 63: Stay | Cleaning dirt level 2 | Battery: 15/30
+Step 64: Stay | Cleaning dirt level 1 | Battery: 14/30
+Step 65: South | Battery: 13/30
+Step 66: Stay | Cleaning dirt level 5 | Battery: 12/30
+Step 67: Stay | Cleaning dirt level 4 | Battery: 11/30
+Step 68: Stay | Cleaning dirt level 3 | Battery: 10/30
+Step 69: North | Battery: 9/30
+Step 70: North | Battery: 8/30
+Step 71: West | Battery: 7/30
+Step 72: West | Battery: 6/30
+Step 73: West | Battery: 5/30
+Step 74: West | Battery: 4/30
+Step 75: West | Battery: 3/30
+Step 76: West | Battery: 2/30
+Step 77: West | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Step 78: Stay | Charging (2.5/30) -> (4/30) | Battery: 4/30
+Step 79: Stay | Charging (4/30) -> (5.5/30) | Battery: 5.5/30
+Step 80: Stay | Charging (5.5/30) -> (7/30) | Battery: 7/30
+Step 81: Stay | Charging (7/30) -> (8.5/30) | Battery: 8.5/30
+Step 82: Stay | Charging (8.5/30) -> (10/30) | Battery: 10/30
+Step 83: Stay | Charging (10/30) -> (11.5/30) | Battery: 11.5/30
+Step 84: Stay | Charging (11.5/30) -> (13/30) | Battery: 13/30
+Step 85: Stay | Charging (13/30) -> (14.5/30) | Battery: 14.5/30
+Step 86: Stay | Charging (14.5/30) -> (16/30) | Battery: 16/30
+Step 87: Stay | Charging (16/30) -> (17.5/30) | Battery: 17.5/30
+Step 88: Stay | Charging (17.5/30) -> (19/30) | Battery: 19/30
+Step 89: Stay | Charging (19/30) -> (20.5/30) | Battery: 20.5/30
+Step 90: Stay | Charging (20.5/30) -> (22/30) | Battery: 22/30
+Step 91: Stay | Charging (22/30) -> (23.5/30) | Battery: 23.5/30
+Step 92: Stay | Charging (23.5/30) -> (25/30) | Battery: 25/30
+Step 93: Stay | Charging (25/30) -> (26.5/30) | Battery: 26.5/30
+Step 94: Stay | Charging (26.5/30) -> (28/30) | Battery: 28/30
+Step 95: Stay | Charging (28/30) -> (29.5/30) | Battery: 29.5/30
+Step 96: Stay | Charging (29.5/30) -> (30/30) | Battery: 30/30
+Step 97: East | Battery: 29/30
+Step 98: East | Battery: 28/30
+Step 99: East | Battery: 27/30
+Step 100: East | Battery: 26/30
+Step 101: East | Battery: 25/30
+Step 102: East | Battery: 24/30
+Step 103: East | Battery: 23/30
+Step 104: South | Battery: 22/30
+Step 105: South | Battery: 21/30
+Step 106: Stay | Cleaning dirt level 2 | Battery: 20/30
+Step 107: Stay | Cleaning dirt level 1 | Battery: 19/30
+Step 108: South | Battery: 18/30
+Step 109: Stay | Cleaning dirt level 1 | Battery: 17/30
+Step 110: South | Battery: 16/30
+Step 111: North | Battery: 15/30
+Step 112: North | Battery: 14/30
+Step 113: North | Battery: 13/30
+Step 114: North | Battery: 12/30
+Step 115: West | Battery: 11/30
+Step 116: West | Battery: 10/30
+Step 117: South | Battery: 9/30
+Step 118: Stay | Cleaning dirt level 2 | Battery: 8/30
+Step 119: Stay | Cleaning dirt level 1 | Battery: 7/30
+Step 120: North | Battery: 6/30
+Step 121: West | Battery: 5/30
+Step 122: West | Battery: 4/30
+Step 123: West | Battery: 3/30
+Step 124: West | Battery: 2/30
+Step 125: West | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Step 126: Stay | Charging (2.5/30) -> (4/30) | Battery: 4/30
+Step 127: Stay | Charging (4/30) -> (5.5/30) | Battery: 5.5/30
+Step 128: Stay | Charging (5.5/30) -> (7/30) | Battery: 7/30
+Step 129: Stay | Charging (7/30) -> (8.5/30) | Battery: 8.5/30
+Step 130: Stay | Charging (8.5/30) -> (10/30) | Battery: 10/30
+Step 131: Stay | Charging (10/30) -> (11.5/30) | Battery: 11.5/30
+Step 132: Stay | Charging (11.5/30) -> (13/30) | Battery: 13/30
+Step 133: Stay | Charging (13/30) -> (14.5/30) | Battery: 14.5/30
+Step 134: Stay | Charging (14.5/30) -> (16/30) | Battery: 16/30
+Step 135: Stay | Charging (16/30) -> (17.5/30) | Battery: 17.5/30
+Step 136: Stay | Charging (17.5/30) -> (19/30) | Battery: 19/30
+Step 137: Stay | Charging (19/30) -> (20.5/30) | Battery: 20.5/30
+Step 138: Stay | Charging (20.5/30) -> (22/30) | Battery: 22/30
+Step 139: Stay | Charging (22/30) -> (23.5/30) | Battery: 23.5/30
+Step 140: Stay | Charging (23.5/30) -> (25/30) | Battery: 25/30
+Step 141: Stay | Charging (25/30) -> (26.5/30) | Battery: 26.5/30
+Step 142: Stay | Charging (26.5/30) -> (28/30) | Battery: 28/30
+Step 143: Stay | Charging (28/30) -> (29.5/30) | Battery: 29.5/30
+Step 144: Stay | Charging (29.5/30) -> (30/30) | Battery: 30/30
+Step 145: East | Battery: 29/30
+Step 146: East | Battery: 28/30
+Step 147: East | Battery: 27/30
+Step 148: East | Battery: 26/30
+Step 149: East | Battery: 25/30
+Step 150: South | Battery: 24/30
+Step 151: West | Battery: 23/30
+Step 152: Stay | Cleaning dirt level 3 | Battery: 22/30
+Step 153: Stay | Cleaning dirt level 2 | Battery: 21/30
+Step 154: Stay | Cleaning dirt level 1 | Battery: 20/30
+Step 155: South | Battery: 19/30
+Step 156: Stay | Cleaning dirt level 4 | Battery: 18/30
+Step 157: Stay | Cleaning dirt level 3 | Battery: 17/30
+Step 158: Stay | Cleaning dirt level 2 | Battery: 16/30
+Step 159: Stay | Cleaning dirt level 1 | Battery: 15/30
+Step 160: South | Battery: 14/30
+Step 161: Stay | Cleaning dirt level 4 | Battery: 13/30
+Step 162: Stay | Cleaning dirt level 3 | Battery: 12/30
+Step 163: Stay | Cleaning dirt level 2 | Battery: 11/30
+Step 164: Stay | Cleaning dirt level 1 | Battery: 10/30
+Step 165: East | Battery: 9/30
+Step 166: West | Battery: 8/30
+Step 167: North | Battery: 7/30
+Step 168: North | Battery: 6/30
+Step 169: North | Battery: 5/30
+Step 170: West | Battery: 4/30
+Step 171: West | Battery: 3/30
+Step 172: West | Battery: 2/30
+Step 173: West | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Step 174: Stay | Charging (2.5/30) -> (4/30) | Battery: 4/30
+Step 175: Stay | Charging (4/30) -> (5.5/30) | Battery: 5.5/30
+Step 176: Stay | Charging (5.5/30) -> (7/30) | Battery: 7/30
+Step 177: Stay | Charging (7/30) -> (8.5/30) | Battery: 8.5/30
+Step 178: Stay | Charging (8.5/30) -> (10/30) | Battery: 10/30
+Step 179: Stay | Charging (10/30) -> (11.5/30) | Battery: 11.5/30
+Step 180: Stay | Charging (11.5/30) -> (13/30) | Battery: 13/30
+Step 181: Stay | Charging (13/30) -> (14.5/30) | Battery: 14.5/30
+Step 182: Stay | Charging (14.5/30) -> (16/30) | Battery: 16/30
+Step 183: Stay | Charging (16/30) -> (17.5/30) | Battery: 17.5/30
+Step 184: Stay | Charging (17.5/30) -> (19/30) | Battery: 19/30
+Step 185: Stay | Charging (19/30) -> (20.5/30) | Battery: 20.5/30
+Step 186: Stay | Charging (20.5/30) -> (22/30) | Battery: 22/30
+Step 187: Stay | Charging (22/30) -> (23.5/30) | Battery: 23.5/30
+Step 188: Stay | Charging (23.5/30) -> (25/30) | Battery: 25/30
+Step 189: Stay | Charging (25/30) -> (26.5/30) | Battery: 26.5/30
+Step 190: Stay | Charging (26.5/30) -> (28/30) | Battery: 28/30
+Step 191: Stay | Charging (28/30) -> (29.5/30) | Battery: 29.5/30
+Step 192: Stay | Charging (29.5/30) -> (30/30) | Battery: 30/30
+Step 193: East | Battery: 29/30
+Step 194: East | Battery: 28/30
+Step 195: East | Battery: 27/30
+Step 196: East | Battery: 26/30
+Step 197: South | Battery: 25/30
+Step 198: South | Battery: 24/30
+Step 199: South | Battery: 23/30
+Step 200: East | Battery: 22/30
+Step 201: Stay | Cleaning dirt level 9 | Battery: 21/30
+Step 202: Stay | Cleaning dirt level 8 | Battery: 20/30
+Step 203: Stay | Cleaning dirt level 7 | Battery: 19/30
+Step 204: Stay | Cleaning dirt level 6 | Battery: 18/30
+Step 205: Stay | Cleaning dirt level 5 | Battery: 17/30
+Step 206: Stay | Cleaning dirt level 4 | Battery: 16/30
+Step 207: Stay | Cleaning dirt level 3 | Battery: 15/30
+Step 208: Stay | Cleaning dirt level 2 | Battery: 14/30
+Step 209: Stay | Cleaning dirt level 1 | Battery: 13/30
+Step 210: South | Battery: 12/30
+Step 211: Stay | Cleaning dirt level 5 | Battery: 11/30
+Step 212: Stay | Cleaning dirt level 4 | Battery: 10/30
+Step 213: North | Battery: 9/30
+Step 214: West | Battery: 8/30
+Step 215: North | Battery: 7/30
+Step 216: North | Battery: 6/30
+Step 217: North | Battery: 5/30
+Step 218: West | Battery: 4/30
+Step 219: West | Battery: 3/30
+Step 220: West | Battery: 2/30
+Step 221: West | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Step 222: Stay | Charging (2.5/30) -> (4/30) | Battery: 4/30
+Step 223: Stay | Charging (4/30) -> (5.5/30) | Battery: 5.5/30
+Step 224: Stay | Charging (5.5/30) -> (7/30) | Battery: 7/30
+Step 225: Stay | Charging (7/30) -> (8.5/30) | Battery: 8.5/30
+Step 226: Stay | Charging (8.5/30) -> (10/30) | Battery: 10/30
+Step 227: Stay | Charging (10/30) -> (11.5/30) | Battery: 11.5/30
+Step 228: Stay | Charging (11.5/30) -> (13/30) | Battery: 13/30
+Step 229: Stay | Charging (13/30) -> (14.5/30) | Battery: 14.5/30
+Step 230: Stay | Charging (14.5/30) -> (16/30) | Battery: 16/30
+Step 231: Stay | Charging (16/30) -> (17.5/30) | Battery: 17.5/30
+Step 232: Stay | Charging (17.5/30) -> (19/30) | Battery: 19/30
+Step 233: Stay | Charging (19/30) -> (20.5/30) | Battery: 20.5/30
+Step 234: Stay | Charging (20.5/30) -> (22/30) | Battery: 22/30
+Step 235: Stay | Charging (22/30) -> (23.5/30) | Battery: 23.5/30
+Step 236: Stay | Charging (23.5/30) -> (25/30) | Battery: 25/30
+Step 237: Stay | Charging (25/30) -> (26.5/30) | Battery: 26.5/30
+Step 238: Stay | Charging (26.5/30) -> (28/30) | Battery: 28/30
+Step 239: Stay | Charging (28/30) -> (29.5/30) | Battery: 29.5/30
+Step 240: Stay | Charging (29.5/30) -> (30/30) | Battery: 30/30
+Step 241: East | Battery: 29/30
+Step 242: East | Battery: 28/30
+Step 243: East | Battery: 27/30
+Step 244: East | Battery: 26/30
+Step 245: South | Battery: 25/30
+Step 246: South | Battery: 24/30
+Step 247: South | Battery: 23/30
+Step 248: East | Battery: 22/30
+Step 249: South | Battery: 21/30
+Step 250: Stay | Cleaning dirt level 3 | Battery: 20/30
+Step 251: Stay | Cleaning dirt level 2 | Battery: 19/30
+Step 252: Stay | Cleaning dirt level 1 | Battery: 18/30
+Step 253: West | Battery: 17/30
+Step 254: West | Battery: 16/30
+Step 255: North | Battery: 15/30
+Step 256: Stay | Cleaning dirt level 4 | Battery: 14/30
+Step 257: Stay | Cleaning dirt level 3 | Battery: 13/30
+Step 258: Stay | Cleaning dirt level 2 | Battery: 12/30
+Step 259: Stay | Cleaning dirt level 1 | Battery: 11/30
+Step 260: West | Battery: 10/30
+Step 261: East | Battery: 9/30
+Step 262: East | Battery: 8/30
+Step 263: North | Battery: 7/30
+Step 264: North | Battery: 6/30
+Step 265: North | Battery: 5/30
+Step 266: West | Battery: 4/30
+Step 267: West | Battery: 3/30
+Step 268: West | Battery: 2/30
+Step 269: West | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Step 270: Stay | Charging (2.5/30) -> (4/30) | Battery: 4/30
+Step 271: Stay | Charging (4/30) -> (5.5/30) | Battery: 5.5/30
+Step 272: Stay | Charging (5.5/30) -> (7/30) | Battery: 7/30
+Step 273: Stay | Charging (7/30) -> (8.5/30) | Battery: 8.5/30
+Step 274: Stay | Charging (8.5/30) -> (10/30) | Battery: 10/30
+Step 275: Stay | Charging (10/30) -> (11.5/30) | Battery: 11.5/30
+Step 276: Stay | Charging (11.5/30) -> (13/30) | Battery: 13/30
+Step 277: Stay | Charging (13/30) -> (14.5/30) | Battery: 14.5/30
+Step 278: Stay | Charging (14.5/30) -> (16/30) | Battery: 16/30
+Step 279: Stay | Charging (16/30) -> (17.5/30) | Battery: 17.5/30
+Step 280: Stay | Charging (17.5/30) -> (19/30) | Battery: 19/30
+Step 281: Stay | Charging (19/30) -> (20.5/30) | Battery: 20.5/30
+Step 282: Stay | Charging (20.5/30) -> (22/30) | Battery: 22/30
+Step 283: Stay | Charging (22/30) -> (23.5/30) | Battery: 23.5/30
+Step 284: Stay | Charging (23.5/30) -> (25/30) | Battery: 25/30
+Step 285: Stay | Charging (25/30) -> (26.5/30) | Battery: 26.5/30
+Step 286: Stay | Charging (26.5/30) -> (28/30) | Battery: 28/30
+Step 287: Stay | Charging (28/30) -> (29.5/30) | Battery: 29.5/30
+Step 288: Stay | Charging (29.5/30) -> (30/30) | Battery: 30/30
+Step 289: East | Battery: 29/30
+Step 290: East | Battery: 28/30
+Step 291: East | Battery: 27/30
+Step 292: East | Battery: 26/30
+Step 293: South | Battery: 25/30
+Step 294: South | Battery: 24/30
+Step 295: South | Battery: 23/30
+Step 296: West | Battery: 22/30
+Step 297: West | Battery: 21/30
+Step 298: Stay | Cleaning dirt level 2 | Battery: 20/30
+Step 299: Stay | Cleaning dirt level 1 | Battery: 19/30
+Step 300: South | Battery: 18/30
+Step 301: Stay | Cleaning dirt level 3 | Battery: 17/30
+Step 302: Stay | Cleaning dirt level 2 | Battery: 16/30
+Step 303: Stay | Cleaning dirt level 1 | Battery: 15/30
+Step 304: West | Battery: 14/30
+Step 305: Stay | Cleaning dirt level 2 | Battery: 13/30
+Step 306: Stay | Cleaning dirt level 1 | Battery: 12/30
+Step 307: East | Battery: 11/30
+Step 308: East | Battery: 10/30
+Step 309: East | Battery: 9/30
+Step 310: North | Battery: 8/30
+Step 311: North | Battery: 7/30
+Step 312: North | Battery: 6/30
+Step 313: North | Battery: 5/30
+Step 314: West | Battery: 4/30
+Step 315: West | Battery: 3/30
+Step 316: West | Battery: 2/30
+Step 317: West | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Step 318: Stay | Charging (2.5/30) -> (4/30) | Battery: 4/30
+Step 319: Stay | Charging (4/30) -> (5.5/30) | Battery: 5.5/30
+Step 320: Stay | Charging (5.5/30) -> (7/30) | Battery: 7/30
+Step 321: Stay | Charging (7/30) -> (8.5/30) | Battery: 8.5/30
+Step 322: Stay | Charging (8.5/30) -> (10/30) | Battery: 10/30
+Step 323: Stay | Charging (10/30) -> (11.5/30) | Battery: 11.5/30
+Step 324: Stay | Charging (11.5/30) -> (13/30) | Battery: 13/30
+Step 325: Stay | Charging (13/30) -> (14.5/30) | Battery: 14.5/30
+Step 326: Stay | Charging (14.5/30) -> (16/30) | Battery: 16/30
+Step 327: Stay | Charging (16/30) -> (17.5/30) | Battery: 17.5/30
+Step 328: Stay | Charging (17.5/30) -> (19/30) | Battery: 19/30
+Step 329: Stay | Charging (19/30) -> (20.5/30) | Battery: 20.5/30
+Step 330: Stay | Charging (20.5/30) -> (22/30) | Battery: 22/30
+Step 331: Stay | Charging (22/30) -> (23.5/30) | Battery: 23.5/30
+Step 332: Stay | Charging (23.5/30) -> (25/30) | Battery: 25/30
+Step 333: Stay | Charging (25/30) -> (26.5/30) | Battery: 26.5/30
+Step 334: Stay | Charging (26.5/30) -> (28/30) | Battery: 28/30
+Step 335: Stay | Charging (28/30) -> (29.5/30) | Battery: 29.5/30
+Step 336: Stay | Charging (29.5/30) -> (30/30) | Battery: 30/30
+Step 337: East | Battery: 29/30
+Step 338: East | Battery: 28/30
+Step 339: East | Battery: 27/30
+Step 340: East | Battery: 26/30
+Step 341: South | Battery: 25/30
+Step 342: South | Battery: 24/30
+Step 343: South | Battery: 23/30
+Step 344: South | Battery: 22/30
+Step 345: West | Battery: 21/30
+Step 346: West | Battery: 20/30
+Step 347: West | Battery: 19/30
+Step 348: North | Battery: 18/30
+Step 349: West | Battery: 17/30
+Step 350: Stay | Cleaning dirt level 1 | Battery: 16/30
+Step 351: South | Battery: 15/30
+Step 352: North | Battery: 14/30
+Step 353: East | Battery: 13/30
+Step 354: South | Battery: 12/30
+Step 355: East | Battery: 11/30
+Step 356: East | Battery: 10/30
+Step 357: East | Battery: 9/30
+Step 358: North | Battery: 8/30
+Step 359: North | Battery: 7/30
+Step 360: North | Battery: 6/30
+Step 361: North | Battery: 5/30
+Step 362: West | Battery: 4/30
+Step 363: West | Battery: 3/30
+Step 364: West | Battery: 2/30
+Step 365: West | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Step 366: Stay | Charging (2.5/30) -> (4/30) | Battery: 4/30
+Step 367: Stay | Charging (4/30) -> (5.5/30) | Battery: 5.5/30
+Step 368: Stay | Charging (5.5/30) -> (7/30) | Battery: 7/30
+Step 369: Stay | Charging (7/30) -> (8.5/30) | Battery: 8.5/30
+Step 370: Stay | Charging (8.5/30) -> (10/30) | Battery: 10/30
+Step 371: Stay | Charging (10/30) -> (11.5/30) | Battery: 11.5/30
+Step 372: Stay | Charging (11.5/30) -> (13/30) | Battery: 13/30
+Step 373: Stay | Charging (13/30) -> (14.5/30) | Battery: 14.5/30
+Step 374: Stay | Charging (14.5/30) -> (16/30) | Battery: 16/30
+Step 375: Stay | Charging (16/30) -> (17.5/30) | Battery: 17.5/30
+Step 376: Stay | Charging (17.5/30) -> (19/30) | Battery: 19/30
+Step 377: Stay | Charging (19/30) -> (20.5/30) | Battery: 20.5/30
+Step 378: Stay | Charging (20.5/30) -> (22/30) | Battery: 22/30
+Step 379: Stay | Charging (22/30) -> (23.5/30) | Battery: 23.5/30
+Step 380: Stay | Charging (23.5/30) -> (25/30) | Battery: 25/30
+Step 381: Stay | Charging (25/30) -> (26.5/30) | Battery: 26.5/30
+Step 382: Stay | Charging (26.5/30) -> (28/30) | Battery: 28/30
+Step 383: Stay | Charging (28/30) -> (29.5/30) | Battery: 29.5/30
+Step 384: Stay | Charging (29.5/30) -> (30/30) | Battery: 30/30
+Step 385: East | Battery: 29/30
+Step 386: East | Battery: 28/30
+Step 387: East | Battery: 27/30
+Step 388: East | Battery: 26/30
+Step 389: South | Battery: 25/30
+Step 390: South | Battery: 24/30
+Step 391: South | Battery: 23/30
+Step 392: South | Battery: 22/30
+Step 393: West | Battery: 21/30
+Step 394: West | Battery: 20/30
+Step 395: West | Battery: 19/30
+Step 396: East | Battery: 18/30
+Step 397: North | Battery: 17/30
+Step 398: East | Battery: 16/30
+Step 399: South | Battery: 15/30
+Step 400: East | Battery: 14/30
+Step 401: East | Battery: 13/30
+Step 402: North | Battery: 12/30
+Step 403: West | Battery: 11/30
+Step 404: North | Battery: 10/30
+Step 405: North | Battery: 9/30
+Step 406: West | Battery: 8/30
+Step 407: Stay | Cleaning dirt level 1 | Battery: 7/30
+Step 408: West | Battery: 6/30
+Step 409: Stay | Cleaning dirt level 1 | Battery: 5/30
+Step 410: West | Battery: 4/30
+Step 411: West | Battery: 3/30
+Step 412: Stay | Cleaning dirt level 1 | Battery: 2/30
+Step 413: North | Charging (1/30) -> (2.5/30) | Battery: 2.5/30
+Total steps: 413/5000
+Dirt left: 0
+Dead battery: False
+Mission success: True

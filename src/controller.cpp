@@ -1,32 +1,33 @@
 #include <vector>
 #include <unordered_set>
-#include <stack>
+#include <unordered_map>
 #include <iterator>
-#include <random>
+#include <random> /* Remove with random stuff */
 #include <string>
 #include <algorithm>
 #include <iostream>
-#include <ctime>
+#include <ctime> /* Remove with random stuff */
 
 #include "controller.h"
 #include "robot.h"
 #include "directions.h"
 
 using std::vector;
-using std::stack;
 using std::pair;
 using std::unordered_set;
+using std::unordered_map;
 using std::cout;
 using std::endl;
 
 Controller::Controller(const Robot* rob) : rob(rob), charger_dist(pair<int, int>(0, 0)), path_to_charger({})
 	, starting_battery(rob->remaining_battery()), charging(false), pathing_to_charger(false) {
-	std::srand(static_cast<unsigned int>(std::time(nullptr)));
+	std::srand(static_cast<unsigned int>(std::time(nullptr))); /* Don't need this random stuff anymore */
 }
 
 Direction Controller::get_next_step() {	
 	return dfs();
 
+#if 0
 	/* Check if we want to go back to the charger (low battery) */
 	if (pathing_to_charger || rob->remaining_battery() - 2 < static_cast<int>(path_to_charger.size())) {
 		pathing_to_charger = true;
@@ -81,6 +82,7 @@ Direction Controller::get_next_step() {
 		break;
 	}
 	return dir;
+#endif
 }
 
 Direction Controller::naive_algorithm() {
@@ -102,7 +104,7 @@ Direction Controller::naive_algorithm() {
 	return choice[std::rand() % choice.size()];
 }
 
-struct Position { 
+struct Position {
 	int x, y;
 	auto operator<=>(const Position&) const = default; /* C++20 spaceship operator pogslide */
 	friend std::ostream& operator<<(std::ostream& os, const Position& p) {
@@ -118,7 +120,7 @@ public:                /* And it needs to know how to store struct Position. */
 class Node {
 public:
 	Position coords;
-	vector<std::shared_ptr<Node>> neighbours;
+	vector<std::shared_ptr<Node>> nb; /* Neighbours of this node */
 	std::shared_ptr<Node> parent; /* This pointer is necessary for backtracking */
 	Node(const Position coords, std::shared_ptr<Node> parent = nullptr) : coords(coords), parent(parent) {}
 
@@ -149,90 +151,88 @@ void printVec(const vector<T>& v, const std::string& label = "") noexcept {
 	cout << " ]" << endl;
 }
 
+Position getPos(Position cur, Direction dir) {
+	switch (dir) {
+	case Direction::NORTH: return Position{ cur.x, cur.y - 1 }; break;
+	case Direction::EAST: return Position{ cur.x + 1, cur.y }; break;
+	case Direction::SOUTH: return Position{ cur.x, cur.y + 1 }; break;
+	case Direction::WEST: return Position{ cur.x - 1, cur.y }; break;
+	}
+}
+
+
 Direction Controller::dfs() {
 	/* Could maybe move these static vars into the Controller constructor, but tbf if we're separating naive and dfs, it's probably more organized to do it like this.*/
 	static Node start(Position{ 0, 0 });
 	static vector<Direction> path; /* A path back to the charger */
 	static unordered_set<Position, PositionHasher> mapped{ Position{0,0} }; /* Vector of nodes the robot knows about */
 	static unordered_set<Position, PositionHasher> visited{ Position{0,0} }; /* Vector of nodes the robot has visited */
+	static unordered_map<Position, vector<Direction>, PositionHasher> returnPath{ {{0,0},  {}} }; /* Map of the most efficient return path from each node. */
+	static vector<Direction> returnQ; /* A queue of directions to return to the charger */
+	static vector<Direction> resumePath; /* A path back to the previous position */
+	static Position curPos{ 0,0 }; /* This is redundant most of the time but helps a LOT with the return algorithm */
 	static std::shared_ptr<Node> c = std::make_shared<Node>(start); /* Current node */
 
 	cout << "============================================\n"; printVec(path, "Path Stack: ");
 
-	/* Need to implement return to charger algo 
-	 * Should be similar to the naive algo, but we need to make a copy of the current path.
-	 * This is so that we can restore the robot to the place we were at before we started returning.
-	 * To restore, basically just flip the path vector's directions, probably with a .map or something
-	 * static vector<Direction> returnPath; <- maybe use something like this to store the duplicate path. 
-	 * You wrote the naive algorithm return thing, so uhhhh yeah. yoroshiku */
-#if 0
-	if (pathing_to_charger || rob->remaining_battery() - 2 < static_cast<int>(path.size())) {
-		pathing_to_charger = true;
-		/* Check if we have arrived at the charger */
+	vector<Direction>& retPath = returnPath[c->coords];
+	if (rob->remaining_battery() - 2 < static_cast<int>(retPath.size()) && curPos != Position{ 0,0 }) {
+		if (returnQ.size() == 0) {
+			returnQ = vector<Direction>(retPath);
+		}
+		printVec(returnQ, "Returning to charger. Path: ");
+		/* Change c to be the Node in its nb that we're going to */
+		/*for (const auto& n : c->nb) {
+			if (n->coords == c->getCoords(retPath.back())) {
+				c = n;
+				break;
+			}
+		}*/
+		//const auto dr = std::find_if(c->nb.begin(), c->nb.end(), [retPath](const auto& n) { return n->coords == c->getCoords(retPath.back()); });
+		//if (c->nb.size() == 0 || dr == c->nb.end()) {
+		//	c = c->parent;
+		//} else {
+		//	c = c->nb[dr - c->nb.begin()];
+		//}
+		//c = c->nb.size() == 0 ? c->parent : c->nb[std::find_if(c->nb.begin(), c->nb.end(), [retPath](const auto& n) { return n->coords == c->getCoords(retPath.back()); }) - c->nb.begin()];
 
-		/* NOTE: I'm pretty sure with the way our path stack works now, it will never reach the charger early. 
-		 * So we could probably delete this check. Idk test later.                   */
-		if (charger_dist.first == 0 && charger_dist.second == 0) {                 /**/
-			path_to_charger.clear();  /* Clear list in case we arrived "early" */  /**/
-			charging = true;		  /* Set charging to true */                   /**/
-			pathing_to_charger = false;                                            /**/
-			goto br;                                                               /**/
-		}																		   /**/
-		/*****************************************************************************/
-
-		/* If we have not yet arrived, backtrack to charger */
-		Direction popped = path.back();
-		path.pop_back();
-
-		/* And because we'll never arrive earlier, this whole keeping track of the charger dist can also be removed. 
-		 * Also worth noting we are now using the coordinate system with Nodes and Position structs, meaning: 
-		 * We can just find the current position by querying the Position coords of the node we're on. 
-		 * And the charger is simply Position (0,0) if we need it somewhere else.   */
-		switch (popped) {                                                         /**/
-		case Direction::EAST: ++charger_dist.first; break;					      /**/
-		case Direction::WEST: --charger_dist.first; break;					      /**/
-		case Direction::SOUTH: ++charger_dist.second; break;					  /**/
-		case Direction::NORTH: --charger_dist.second; break;					  /**/
-		}																		  /**/
-		/****************************************************************************/
-
-		return popped;
+		Direction d = returnQ.back();
+		resumePath.push_back(opposite(d)); returnQ.pop_back();
+		curPos = getPos(curPos, d);
+		return d;
 	}
-	/* Charge until we hit our starting battery */
-	if (charging) {
-	br:
-		if (rob->remaining_battery() < starting_battery || rob->remaining_battery() < 2)
-			return Direction::STAY;
-		charging = false;
-	}
-#endif
+	if (curPos == Position{ 0,0 } && (rob->remaining_battery() < starting_battery || rob->remaining_battery() < 2)) return Direction::STAY; /* Charge if we need to. */
+	if (resumePath.size() > 0) {
+		printVec(resumePath, "Resume Path: ");
 
+		Direction d = resumePath.back(); resumePath.pop_back();
+		curPos = getPos(curPos, d);
+		return d;
+	}
 
 	if (rob->get_dirt_underneath() > 0) return Direction::STAY; /* If there's dirt stay still */
 
 	vector<Direction> choice; /* Populate the choice vector */
-	if (!rob->is_wall(Direction::NORTH)) {
-		c->neighbours.push_back(std::make_shared<Node>(c->nCoords(), c));
-		choice.push_back(Direction::NORTH);
-		mapped.insert(c->nCoords());
-	}
-	if (!rob->is_wall(Direction::EAST)) {
-		c->neighbours.push_back(std::make_shared<Node>(c->eCoords(), c));
-		choice.push_back(Direction::EAST);
-		mapped.insert(c->eCoords());
-	}
-	if (!rob->is_wall(Direction::SOUTH)) {
-		c->neighbours.push_back(std::make_shared<Node>(c->sCoords(), c));
-		choice.push_back(Direction::SOUTH);
-		mapped.insert(c->sCoords());
-	}
-	if (!rob->is_wall(Direction::WEST)) {
-		c->neighbours.push_back(std::make_shared<Node>(c->wCoords(), c));
-		choice.push_back(Direction::WEST);
-		mapped.insert(c->wCoords());
+	vector<Direction>& curPath = returnPath[c->coords];
+	for (const auto& dir : { Direction::NORTH, Direction::EAST, Direction::SOUTH, Direction::WEST }) {
+		if (rob->is_wall(dir)) continue; /* If there's a wall, don't add it to the choice vector */
+		Position p = c->getCoords(dir);
+		c->nb.push_back(std::make_shared<Node>(p, c));
+		choice.push_back(dir);
+		mapped.insert(p);
+
+		vector<Direction>& dirPath = returnPath[p];
+		if (dirPath.empty() || dirPath.size() > curPath.size() + 1) { /* If the path to the node is longer than what can be reached through the current node */
+			dirPath = vector<Direction>(curPath); // Save the current path
+			dirPath.push_back(opposite(dir)); // Add the opposite direction to the path
+		} else if (curPath.empty() || curPath.size() > dirPath.size() + 1) { /* If the current path is empty or is longer than what can be reached through the other node */
+			curPath = vector<Direction>(dirPath); // Save the path to the node
+			curPath.push_back(dir); // Add the direction to the path 
+		}
 	}
 
 	printVec(choice, "Choice: ");
+	printVec(curPath, "Return Path: ");
 
 	/* pchoose gets a priority among the choice for whichever node is not already visited. */
 	const auto pchoose = std::find_if(choice.begin(), choice.end(), [](Direction d) { return visited.find(c->getCoords(d)) == visited.end(); });
@@ -240,12 +240,16 @@ Direction Controller::dfs() {
 		if (path.empty()) return Direction::STAY; /* Either we're in an enclosed area or we are done. */
 		Direction dir = path.back(); path.pop_back(); /* or we've fully explored the branch, so start consuming the path stack. */
 		c = c->parent;
+		cout << "Moving to node " << c->coords << endl;
+		curPos = c->coords;
 		return dir;
 	}
 	const auto ind = pchoose - choice.begin();
 	cout << "Chosen index: " << ind << "(" << choice[ind] << ")" << endl;
 	visited.insert(c->getCoords(choice[ind])); /* Mark the node as visited */
-	c = c->neighbours[ind]; /* Sets the current node to the node we're visiting */
+	c = c->nb[ind]; /* Sets the current node to the node we're visiting */
+	cout << "Moving to node " << c->coords << endl;
+	curPos = c->coords;
 	path.push_back(opposite(choice[ind])); /* Return path */
 
 	return choice[ind];
